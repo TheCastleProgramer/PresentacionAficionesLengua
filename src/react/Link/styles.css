@@ -1,0 +1,17 @@
+.custom-link {
+    display: inline-block; /* Asegura que el transform funcione en inline elements */
+    color: white; /* El texto es blanco inicialmente */
+    font-size: 1rem;
+    text-decoration: none;
+    background: linear-gradient(to right, transparent, transparent); /* Sin degradado inicialmente */
+    background-clip: text;
+    -webkit-background-clip: text;
+    transition: transform 0.3s ease, background 0.3s ease, font-size 0.3s ease; /* Transiciones suaves */
+}
+
+.custom-link:hover {
+    transform: scale(1.25); /* Agranda el texto */
+    color: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+}

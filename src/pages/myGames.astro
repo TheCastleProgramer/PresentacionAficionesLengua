@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import GameCard from '../components/GameCard.astro';
+import juegos from '../data/juegos.json';
+import Header from "../components/Header.astro"; // Asegúrate de que la ruta sea correcta
+
+const juegosData = juegos;
+---
+
+<Layout title="Lista de Juegos">
+    <Header user="TheCastleProgramerWebsite" />
+    <div class="card-container">
+        {juegosData.map(juego => (
+                <GameCard
+                        key={juego.id}
+                        href={juego.href}
+                        titulo={juego.titulo}
+                        logo={juego.logo}
+                        descripcion={juego.descripcion}
+                />
+        ))}
+    </div>
+</Layout>
+
+<style>
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+</style>

@@ -1,0 +1,35 @@
+---
+interface Variable {
+    user: string;
+}
+
+let title;
+
+const { user } = Astro.props;
+
+if (user === "Iron") {
+    title = "Iron Website";
+} else {
+    title = "TheCastleProgramerWebsite";
+}
+
+import Enlace from '../react/Link/Link.jsx'
+import './../css/Header.css'
+---
+<link rel="stylesheet" href=/>
+<header class="header">
+    <Enlace href="/../myProjects">MyProjects</Enlace>
+    <Enlace href="/../myGames">MyGames</Enlace>
+    <h2 id="titulo"> {title} </h2>
+    <Enlace href="https://github.com/TheCastleProgramer">Github</Enlace>
+    <Enlace href="https://thecastleprogramer.itch.io/">Itch.io</Enlace>
+</header>
+<style>
+    h2 {
+        font-family: "Nunito", system-ui;
+        font-optical-sizing: auto;
+        font-style: normal;
+        color: white;
+        font-size: 30px;
+    }
+</style>
