@@ -1,0 +1,25 @@
+{
+    "pages": [
+      {
+        "id": 1,
+        "title": "Page 1",
+        "content": "<div><h3>Bienvenido a la Página 1</h3><p>Este es un <strong>ejemplo de contenido HTML</strong> en la primera página.</p></div>",
+        "background": "#E6F2FF",
+        "backgroundImage": "https://ejemplo.com/imagen1.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Page 2", 
+        "content": "<div><h3>Contenido de la Página 2</h3><p>Aquí puedes agregar <em>cualquier contenido HTML</em> que desees.</p></div>",
+        "background": "#E6FFE6",
+        "backgroundImage": "https://ejemplo.com/imagen2.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Page 3",
+        "content": "<div><h3>Última Página</h3><p>Gracias por ver nuestra <u>presentación interactiva</u>.</p></div>",
+        "background": "#F2E6FF",
+        "backgroundImage": "https://ejemplo.com/imagen3.jpg"
+      }
+    ]
+  }
